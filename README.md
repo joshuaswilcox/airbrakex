@@ -52,6 +52,7 @@ which could be configured as follows:
 ```elixir
 config :logger,
   backends: [Airbrakex.LoggerBackend]
+  ignore: [Phoenix.Router.NoRouteError]
 ```
 
 ### Plug
